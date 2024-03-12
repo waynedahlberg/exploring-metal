@@ -9,23 +9,8 @@ import SwiftUI
 
 private let _previewLoadDate = Date.now
 
-#Preview("Mario Timer") {
-  VStack {
-    CountdownView(date: _previewLoadDate + 32)
-    
-    Spacer()
-  }
-  .padding()
-  .frame(maxWidth: .infinity, maxHeight: .infinity)
-  .background(
-    LinearGradient(
-      colors: [.blue, .purple],
-      startPoint: .top,
-      endPoint: .bottom
-    )
-    .edgesIgnoringSafeArea(.all)
-    .brightness(-0.1)
-  )
+#Preview("Smash Countdown Timer") {
+  SmashCounterView()
 }
 
 struct CountdownView: View {
@@ -35,7 +20,14 @@ struct CountdownView: View {
   }
   
   var body: some View {
-    CountdownLabelView(date: .now)
+    VStack {
+      Button("Increase count") {
+        
+      }
+      .padding(16)
+      .buttonStyle(.borderedProminent)
+      CountdownLabelView(date: .now)
+    }
   }
 }
 
@@ -69,7 +61,7 @@ struct CountdownLabelView: View {
   }()
   
   let gradient = LinearGradient(
-    colors: [.blue, .purple, .pink],
+    colors: [.red, .pink, .yellow],
     startPoint: .top,
     endPoint: .bottom
   )
@@ -264,5 +256,26 @@ extension CGAffineTransform {
     Rectangle()
       .fill(.red.opacity(0.5))
       .frame(width: 100, height: 100)
+  }
+}
+
+struct SmashCounterView: View {
+  var body: some View {
+    VStack {
+      CountdownView(date: .now + 36)
+      
+      Spacer()
+    }
+    .padding()
+    .frame(maxWidth: .infinity, maxHeight: .infinity)
+    .background(
+      LinearGradient(
+        colors: [.blue, .purple],
+        startPoint: .top,
+        endPoint: .bottom
+      )
+      .edgesIgnoringSafeArea(.all)
+      .brightness(-0.1)
+    )
   }
 }

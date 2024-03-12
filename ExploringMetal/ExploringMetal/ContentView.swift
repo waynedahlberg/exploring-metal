@@ -23,7 +23,7 @@ struct ContentView: View {
           NavigationLink(destination: CurtainView()) {
             Text("Curtain")
           }
-          NavigationLink(destination: CountdownView(date: .now)) {
+          NavigationLink(destination: SmashCounterView()) {
             Text("Countdown")
           }
         }
