@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+/// Blog post: https://cindori.com/developer/swiftui-shaders-marquee
+
 struct BannerView: View {
   var body: some View {
     VStack(alignment: .leading) {

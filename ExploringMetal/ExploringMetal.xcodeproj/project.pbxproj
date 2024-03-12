@@ -16,6 +16,8 @@
 		B0C0FB962B9FE56600D3294C /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C0FB952B9FE56600D3294C /* BannerView.swift */; };
 		B0C0FB982B9FE5C100D3294C /* banner.metal in Sources */ = {isa = PBXBuildFile; fileRef = B0C0FB972B9FE5C100D3294C /* banner.metal */; };
 		B0C0FB9A2B9FE9AA00D3294C /* BannerViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C0FB992B9FE9AA00D3294C /* BannerViewModifier.swift */; };
+		B0C0FB9E2BA0069300D3294C /* PatternView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C0FB9D2BA0069300D3294C /* PatternView.swift */; };
+		B0C0FBA02BA0069C00D3294C /* halftone.metal in Sources */ = {isa = PBXBuildFile; fileRef = B0C0FB9F2BA0069C00D3294C /* halftone.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		B0C0FB952B9FE56600D3294C /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		B0C0FB972B9FE5C100D3294C /* banner.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = banner.metal; sourceTree = "<group>"; };
 		B0C0FB992B9FE9AA00D3294C /* BannerViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewModifier.swift; sourceTree = "<group>"; };
+		B0C0FB9D2BA0069300D3294C /* PatternView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternView.swift; sourceTree = "<group>"; };
+		B0C0FB9F2BA0069C00D3294C /* halftone.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = halftone.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 			children = (
 				B0C0FB802B9FDEC400D3294C /* ExploringMetalApp.swift */,
 				B0C0FB822B9FDEC400D3294C /* ContentView.swift */,
+				B0C0FB9B2BA0067700D3294C /* Rob Bohnke */,
 				B0C0FB8E2B9FDEE600D3294C /* Cindori */,
 				B0C0FB842B9FDEC500D3294C /* Assets.xcassets */,
 				B0C0FB862B9FDEC500D3294C /* Preview Content */,
@@ -104,6 +109,23 @@
 				B0C0FB972B9FE5C100D3294C /* banner.metal */,
 			);
 			path = Banner;
+			sourceTree = "<group>";
+		};
+		B0C0FB9B2BA0067700D3294C /* Rob Bohnke */ = {
+			isa = PBXGroup;
+			children = (
+				B0C0FB9C2BA0068500D3294C /* Patterns */,
+			);
+			path = "Rob Bohnke";
+			sourceTree = "<group>";
+		};
+		B0C0FB9C2BA0068500D3294C /* Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				B0C0FB9D2BA0069300D3294C /* PatternView.swift */,
+				B0C0FB9F2BA0069C00D3294C /* halftone.metal */,
+			);
+			path = Patterns;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,8 +199,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0C0FB962B9FE56600D3294C /* BannerView.swift in Sources */,
+				B0C0FB9E2BA0069300D3294C /* PatternView.swift in Sources */,
 				B0C0FB982B9FE5C100D3294C /* banner.metal in Sources */,
 				B0C0FB832B9FDEC400D3294C /* ContentView.swift in Sources */,
+				B0C0FBA02BA0069C00D3294C /* halftone.metal in Sources */,
 				B0C0FB902B9FDF0400D3294C /* WaveView.swift in Sources */,
 				B0C0FB9A2B9FE9AA00D3294C /* BannerViewModifier.swift in Sources */,
 				B0C0FB932B9FDF8500D3294C /* wave.metal in Sources */,

@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+/// Blog post: https://cindori.com/developer/swiftui-shaders-wave
+
 struct WaveView: View {
   let startDate = Date.now
   
