@@ -18,6 +18,9 @@
 		B0C0FB9A2B9FE9AA00D3294C /* BannerViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C0FB992B9FE9AA00D3294C /* BannerViewModifier.swift */; };
 		B0C0FB9E2BA0069300D3294C /* PatternView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C0FB9D2BA0069300D3294C /* PatternView.swift */; };
 		B0C0FBA02BA0069C00D3294C /* halftone.metal in Sources */ = {isa = PBXBuildFile; fileRef = B0C0FB9F2BA0069C00D3294C /* halftone.metal */; };
+		B0C0FBA32BA0296D00D3294C /* CurtainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C0FBA22BA0296D00D3294C /* CurtainView.swift */; };
+		B0C0FBA52BA0307900D3294C /* curtain.metal in Sources */ = {isa = PBXBuildFile; fileRef = B0C0FBA42BA0307900D3294C /* curtain.metal */; };
+		B0C0FBA82BA03EE500D3294C /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C0FBA72BA03EE500D3294C /* CountdownView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		B0C0FB992B9FE9AA00D3294C /* BannerViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewModifier.swift; sourceTree = "<group>"; };
 		B0C0FB9D2BA0069300D3294C /* PatternView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternView.swift; sourceTree = "<group>"; };
 		B0C0FB9F2BA0069C00D3294C /* halftone.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = halftone.metal; sourceTree = "<group>"; };
+		B0C0FBA22BA0296D00D3294C /* CurtainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurtainView.swift; sourceTree = "<group>"; };
+		B0C0FBA42BA0307900D3294C /* curtain.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = curtain.metal; sourceTree = "<group>"; };
+		B0C0FBA72BA03EE500D3294C /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +73,7 @@
 			children = (
 				B0C0FB802B9FDEC400D3294C /* ExploringMetalApp.swift */,
 				B0C0FB822B9FDEC400D3294C /* ContentView.swift */,
-				B0C0FB9B2BA0067700D3294C /* Rob Bohnke */,
-				B0C0FB8E2B9FDEE600D3294C /* Cindori */,
+				B0C0FB8E2B9FDEE600D3294C /* Views */,
 				B0C0FB842B9FDEC500D3294C /* Assets.xcassets */,
 				B0C0FB862B9FDEC500D3294C /* Preview Content */,
 			);
@@ -83,13 +88,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B0C0FB8E2B9FDEE600D3294C /* Cindori */ = {
+		B0C0FB8E2B9FDEE600D3294C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B0C0FBA62BA03ED900D3294C /* Countdown */,
+				B0C0FBA12BA0296500D3294C /* Curtain */,
+				B0C0FB9C2BA0068500D3294C /* Patterns */,
 				B0C0FB942B9FE54E00D3294C /* Banner */,
 				B0C0FB912B9FDF7C00D3294C /* Waves */,
 			);
-			path = Cindori;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		B0C0FB912B9FDF7C00D3294C /* Waves */ = {
@@ -111,14 +119,6 @@
 			path = Banner;
 			sourceTree = "<group>";
 		};
-		B0C0FB9B2BA0067700D3294C /* Rob Bohnke */ = {
-			isa = PBXGroup;
-			children = (
-				B0C0FB9C2BA0068500D3294C /* Patterns */,
-			);
-			path = "Rob Bohnke";
-			sourceTree = "<group>";
-		};
 		B0C0FB9C2BA0068500D3294C /* Patterns */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +126,23 @@
 				B0C0FB9F2BA0069C00D3294C /* halftone.metal */,
 			);
 			path = Patterns;
+			sourceTree = "<group>";
+		};
+		B0C0FBA12BA0296500D3294C /* Curtain */ = {
+			isa = PBXGroup;
+			children = (
+				B0C0FBA22BA0296D00D3294C /* CurtainView.swift */,
+				B0C0FBA42BA0307900D3294C /* curtain.metal */,
+			);
+			path = Curtain;
+			sourceTree = "<group>";
+		};
+		B0C0FBA62BA03ED900D3294C /* Countdown */ = {
+			isa = PBXGroup;
+			children = (
+				B0C0FBA72BA03EE500D3294C /* CountdownView.swift */,
+			);
+			path = Countdown;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,11 +216,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0C0FB962B9FE56600D3294C /* BannerView.swift in Sources */,
+				B0C0FBA32BA0296D00D3294C /* CurtainView.swift in Sources */,
 				B0C0FB9E2BA0069300D3294C /* PatternView.swift in Sources */,
 				B0C0FB982B9FE5C100D3294C /* banner.metal in Sources */,
 				B0C0FB832B9FDEC400D3294C /* ContentView.swift in Sources */,
 				B0C0FBA02BA0069C00D3294C /* halftone.metal in Sources */,
+				B0C0FBA82BA03EE500D3294C /* CountdownView.swift in Sources */,
 				B0C0FB902B9FDF0400D3294C /* WaveView.swift in Sources */,
+				B0C0FBA52BA0307900D3294C /* curtain.metal in Sources */,
 				B0C0FB9A2B9FE9AA00D3294C /* BannerViewModifier.swift in Sources */,
 				B0C0FB932B9FDF8500D3294C /* wave.metal in Sources */,
 				B0C0FB812B9FDEC400D3294C /* ExploringMetalApp.swift in Sources */,
